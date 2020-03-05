@@ -1,4 +1,11 @@
 {% load static %}
+<style>
+  #hello-msg{
+    font-size: 16px;
+    color: #fff;
+    margin-right: 20px;
+  }
+</style>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <!-- <a class="navbar-brand" href="#">Trung's Company</a> -->
     <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static '/images/logo.png' %}" alt=""></a>
@@ -16,4 +23,6 @@
         
       </ul>
     </div>
+    <span id="hello-msg">Hello, {{request.user}}</span>
+    <span><a id="hello-msg" href="{% url 'logout' %}">Logout</a></span>
   </nav>

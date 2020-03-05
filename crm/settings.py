@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '7(!f!(tux^4ofn$bq)j_z)!o6-m#q!$4#shs5bpamx*_uu^91)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['trungnv-dj-crm.herokuapp.com', '127.0.0.1']
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     #own
     'accounts',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
