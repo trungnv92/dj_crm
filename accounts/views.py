@@ -36,7 +36,7 @@ def loginPage(request):
                 login(request, user) # login method of contrib
                 return redirect('home')
             else:
-                messages.info(request, 'Username or Passwork incorrect')
+                messages.info(request, 'Username or Password incorrect')
 
         context = {}
         return render(request, 'accounts/login.html', context)
